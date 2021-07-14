@@ -1,0 +1,51 @@
+// Box Model
+// -----------------------------------------------------------------------------
+
+* { box-sizing: border-box; }
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+// Body
+// -----------------------------------------------------------------------------
+
+body {
+  margin: 0;
+  background: $white_paper;
+  font-family: $font-family;
+  color: $primary_100;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+
+  @include text-base;
+}
+
+// Links
+// -----------------------------------------------------------------------------
+
+a { text-decoration: none; }
+
+// Forms
+// -----------------------------------------------------------------------------
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+textarea { resize: none; }
+
+// Images
+// -----------------------------------------------------------------------------
+
+img,
+svg {
+  max-width: 100%;
+}

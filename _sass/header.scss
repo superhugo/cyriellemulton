@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  @include container;
+
+  .header-logo {
+    flex: 1;
+  }
+
+  .header-name {
+    @include text-h4;
+  }
+
+  .header-title {
+    color: $primary_200;
+  }
+
+  .header-actions {
+    a:first-child {
+      margin-right: 32px;
+    }
+  }
+}
