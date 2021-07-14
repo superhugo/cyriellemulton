@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+
+  .footer-copyright {
+    flex: 1;
+  }
+
+  .footer-maker {
+    flex: 1;
+    text-align: right;
+  }
+}
