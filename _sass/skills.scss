@@ -1,0 +1,24 @@
+.skills {
+  .skills-container {
+    margin-top: -16px;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+  .skill-card {
+    display: flex;
+    align-items: center;
+    width: calc(33.33% - 32px);
+    background-color: $primary_400;
+    padding: 32px;
+    border-radius: 16px;
+    justify-content: center;
+    font-weight: 500;
+    margin: 16px;
+
+    &:nth-child(10),
+    &:nth-child(11),
+    &:nth-child(12) {
+      margin-bottom: 0;
+    }
+  }
+}
