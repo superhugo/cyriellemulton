@@ -8,5 +8,9 @@
   .footer-maker {
     flex: 1;
     text-align: right;
+
+    a:hover {
+      border-bottom: 1px solid $primary-300;
+    }
   }
 }
