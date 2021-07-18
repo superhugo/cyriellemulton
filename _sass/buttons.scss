@@ -1,26 +1,26 @@
 .button-primary {
   @include text-base-bold;
 
-  color: $white_paper;
-  background-color: $primary_100;
+  color: $white-paper;
+  background-color: $primary-100;
   padding: 16px 24px;
   border-radius: 100px;
 
   &:hover {
-    background-color: darken($primary_100, 5%);
+    background-color: darken($primary-100, 5%);
   }
 }
 
 .button-secondary {
   @include text-base-bold;
 
-  color: $primary_100;
-  background-color: $white_paper;
+  color: $primary-100;
+  background-color: $white-paper;
   padding: 16px 24px;
   border-radius: 100px;
-  border: 2px solid $primary_100;
+  border: 2px solid $primary-100;
 
   &:hover {
-    background-color: $primary_300;
+    background-color: $primary-300;
   }
 }

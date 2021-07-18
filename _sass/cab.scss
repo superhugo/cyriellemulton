@@ -1,3 +1,26 @@
 .cab {
   background-color: $primary-400;
+
+  .cab-photos {
+    margin-left: -16px;
+    margin-right: -16px;
+    margin-bottom: 32px;
+
+    img {
+      flex: 1;
+      height: 240px;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+  }
+
+  .cab-equipment {
+
+  }
+
+  .cab-equipment-item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $primary-300;
+  }
 }
