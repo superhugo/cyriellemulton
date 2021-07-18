@@ -1,5 +1,45 @@
 <section class="location">
   <div class="container">
     <h3>Localisation</h3>
+    <div class="flex flex-y-center">
+      <div class="location-map">
+        <iframe
+          width="100%"
+          height="460"
+          style="border:0"
+          loading="lazy"
+          allowfullscreen
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ6dMFBdlt5kcRw8guMh3bq_s&key={{ site.google_maps_api_key }}">
+        </iframe>
+      </div>
+      <div class="location-details">
+        <div class="location-details-item">
+          <h5>Adresse</h5>
+          <div>
+            75 rue Armand Carrel
+            <br>
+            75019 Paris
+          </div>
+        </div>
+        <div class="location-details-item">
+          <h5>Métro</h5>
+          <div>
+            Ligne 5, 2 : Jaurès (5 min)
+            <br>
+            Ligne 7 : Stalingrad (8 min)
+          </div>
+        </div>
+        <div class="location-details-item">
+          <h5>Bus</h5>
+          <div>
+            Ligne 48 : Jaures (1 min)
+            <br>
+            Ligne 26 : Jaures - Stalingrad (4 min)
+            <br>
+            Ligne 46 : Colonel Fabien (9 min)
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

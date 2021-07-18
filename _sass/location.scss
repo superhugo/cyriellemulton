@@ -1,0 +1,19 @@
+.location {
+  .location-map {
+    width: 60%;
+    margin-right: 32px;
+  }
+
+  .location-details {
+    width: 40%;
+    margin-left: 32px;
+  }
+
+  .location-details-item {
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

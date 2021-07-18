@@ -63,10 +63,12 @@ h5 {
 
 h1 {
   @include text-h1;
+  margin-bottom: 32px;
 }
 
 h2 {
   @include text-h2;
+  margin-bottom: 32px;
 }
 
 h3 {
@@ -76,8 +78,10 @@ h3 {
 
 h4 {
   @include text-h4;
+  margin-bottom: 16px;
 }
 
 h5 {
   @include text-h5;
+  margin-bottom: 0;
 }
