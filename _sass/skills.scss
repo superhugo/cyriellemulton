@@ -4,6 +4,7 @@
     margin-left: -16px;
     margin-right: -16px;
   }
+
   .skill-card {
     display: flex;
     align-items: center;
@@ -14,11 +15,28 @@
     justify-content: center;
     font-weight: 500;
     margin: 16px;
+    text-align: center;
 
     &:nth-child(10),
     &:nth-child(11),
     &:nth-child(12) {
       margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .skills {
+    .skill-card {
+      width: calc(50% - 32px);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .skills {
+    .skill-card {
+      width: calc(100% - 32px);
     }
   }
 }
