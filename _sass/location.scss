@@ -17,3 +17,15 @@
     }
   }
 }
+
+@media (max-width: 860px) {
+  .location {
+    .location-map {
+      width: 100%;
+    }
+
+    .location-details {
+      width: 100%; 
+    }
+  }
+}

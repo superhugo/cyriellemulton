@@ -7,3 +7,31 @@
     margin-right: 32px;
   }
 }
+
+@media (max-width: 860px) {
+  .book {
+    .flex {
+      display: block;
+    }
+
+    .book-link {
+      display: block;
+      margin-bottom: 16px;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .book {
+    .book-link {
+      width: 100%;
+    }
+  }
+}
