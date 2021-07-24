@@ -20,3 +20,22 @@
     }
   }
 }
+
+@media (max-width: 850px) {
+  .header {
+    display: block;
+    text-align: center;
+  }
+
+  .header-logo {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    .header-actions-tel {
+      display: none;
+    }
+  }
+}

@@ -3,8 +3,9 @@
 
   color: $white-paper;
   background-color: $primary-100;
-  padding: 16px 24px;
+  padding: 12px 24px;
   border-radius: 100px;
+  display: inline-block;
 
   &:hover {
     background-color: darken($primary-100, 5%);
@@ -16,9 +17,10 @@
 
   color: $primary-100;
   background-color: $white-paper;
-  padding: 16px 24px;
+  padding: 12px 24px;
   border-radius: 100px;
   border: 2px solid $primary-100;
+  display: inline-block;
 
   &:hover {
     background-color: $primary-300;
