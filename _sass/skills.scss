@@ -37,6 +37,18 @@
   .skills {
     .skill-card {
       width: calc(100% - 32px);
+      padding: 16px;
+      margin: 0 auto 16px auto;
+
+      &:nth-child(10),
+      &:nth-child(11),
+      &:nth-child(12) {
+        margin-bottom: 16px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
