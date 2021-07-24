@@ -14,3 +14,15 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .footer {
+    display: block;
+    text-align: center;
+
+    .footer-maker {
+      margin-top: 16px;
+      text-align: center;
+    }
+  }
+}
