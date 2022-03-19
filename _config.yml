@@ -1,0 +1,16 @@
+title: "Cyrielle Multon — Kinésithérapeute spécialisée — Paris 19e"
+email: "bonjour@cyriellemulton.fr"
+description: "Cyrielle Multon est spécialisée en pelvi-périnéologie, sénologie et thérapie manuelle."
+baseurl: ""
+url: "https://cyriellemulton.fr"
+doctolib_url: "https://www.doctolib.fr/masseur-kinesitherapeute/paris/cyrielle-multon"
+phone_number: "01 56 96 45 11"
+international_phone_number: "+33156964511"
+
+sass:
+  style: compressed
+
+permalink: pretty
+
+plugins:
+  - jekyll-sitemap
