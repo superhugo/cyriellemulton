@@ -295,14 +295,20 @@ body::before {
   font-weight: var(--graisse-demi);
 }
 .activite li:last-child { border-bottom: var(--filet) solid currentColor; }
+/* bouton contour en bas de carte ; se remplit au survol de la carte */
+.activite > :nth-last-child(2) { margin-bottom: var(--esp-7); }
 .activite .suite {
+  align-self: flex-start;
   margin-top: auto;
-  padding-top: var(--esp-7);
-  font-size: var(--taille-suite);
+  padding: var(--bouton-marge);
+  border: var(--filet) solid var(--couleur-accent);
+  border-radius: var(--rayon);
+  color: var(--couleur-accent);
   font-weight: var(--graisse-demi);
+  line-height: var(--interligne-bouton);
+  transition: background-color var(--duree-courte) ease, color var(--duree-courte) ease;
 }
-.activite .fleche { display: inline-block; margin-left: .25em; transition: transform var(--duree-moyenne) ease; }
-.activite:hover .fleche { transform: translateX(var(--fleche-course)); }
+.activite:hover .suite, .activite:focus-visible .suite { background: var(--couleur-accent); color: var(--couleur-sur-accent); }
 
 /* ---------- Le cabinet (home) ---------- */
 .cabinet h3, .libelle {
@@ -324,6 +330,7 @@ body::before {
 .acces li { padding: var(--esp-2) 0; border-top: var(--filet) solid var(--couleur-accent); }
 .acces li:last-child { border-bottom: var(--filet) solid var(--couleur-accent); }
 .acces strong { font-weight: var(--graisse-gras); }
+.carte-note { margin-top: var(--esp-3); }
 .cabinet-infos .btn { margin-top: var(--esp-8); }
 .carte {
   border: var(--filet) solid var(--couleur-accent);
@@ -411,7 +418,7 @@ body::before {
 /* colonnes (les cours) */
 .colonnes {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--esp-fluide-4) var(--colonne-ecart);
 }
 .colonne {
@@ -508,22 +515,9 @@ body::before {
   white-space: normal;
 }
 .pied .metier { margin-top: var(--esp-3); font-size: var(--taille-texte-grand); font-weight: var(--graisse-moyen); }
-.pied-grille {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: var(--pied-ecart);
-  margin-top: var(--esp-fluide-4);
-  padding-top: var(--esp-6);
-  border-top: var(--filet) solid var(--pied-texte);
-}
-.pied-grille > p:nth-child(1) { grid-column: 1 / span 4; }
-.pied-grille > nav { grid-column: 5 / span 5; display: flex; flex-wrap: wrap; gap: var(--pied-nav-ecart); align-content: start; }
-.pied-grille > p:nth-child(3) { grid-column: 10 / span 3; font-weight: var(--graisse-demi); }
-.pied-grille > p:nth-child(4) { grid-column: 1 / -1; }
+.pied .mentions { margin-top: var(--esp-fluide-4); }
 .pied small { font-size: var(--taille-petit); }
 .pied a { text-decoration-thickness: var(--filet); text-underline-offset: var(--soulignement-decalage-pied); }
-.pied nav a { font-weight: var(--graisse-moyen); text-decoration-color: transparent; transition: text-decoration-color var(--duree-courte) ease; }
-.pied nav a:hover { text-decoration-color: currentColor; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1000px) {
@@ -539,7 +533,7 @@ body::before {
   .entete nav a:first-child { display: none; } /* « Accueil » : le logo y mène déjà */
   .entete .btn { padding: var(--bouton-marge-mobile); font-size: var(--taille-petit); }
 
-  .presentation-bas, .intro, .cabinet-grille, .grille, .pied-grille, .domaine { display: block; }
+  .presentation-bas, .intro, .cabinet-grille, .grille, .domaine { display: block; }
   .portrait { width: min(100%, var(--portrait-largeur-mobile)); margin-top: var(--esp-9); }
   .intro p { margin-top: var(--esp-5); max-width: var(--largeur-texte); }
 
@@ -555,7 +549,6 @@ body::before {
   .fiche > div { column-gap: var(--esp-4); }
   .colonne .fiche > div:last-child { border-bottom: 0; }
 
-  .pied-grille > * + * { margin-top: var(--esp-5); }
 }
 
 @media (max-width: 560px) {
