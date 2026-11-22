@@ -171,6 +171,10 @@ body::before {
     var(--photo-fond);
 }
 .portrait { grid-column: 9 / span 4; aspect-ratio: 4 / 5; }
+/* En-tête avec photo en paysage : 3:2 par défaut (même ratio que les cartes de l'accueil), 4:3 en variante */
+.presentation-bas.paysage .presentation-texte { grid-column: 1 / span 6; }
+.presentation-bas.paysage .photo { grid-column: 7 / span 6; aspect-ratio: 3 / 2; }
+.presentation-bas.paysage .photo.format-4-3 { aspect-ratio: 4 / 3; }
 img.photo {
   display: block;
   width: 100%;
@@ -179,6 +183,7 @@ img.photo {
 }
 .format-portrait { aspect-ratio: 4 / 5; }
 .format-paysage { aspect-ratio: 3 / 2; }
+.format-4-3 { aspect-ratio: 4 / 3; }
 .legende {
   position: absolute;
   left: var(--legende-gauche);
@@ -547,6 +552,7 @@ img.photo {
 
   .presentation-bas, .intro, .cabinet-grille, .grille, .domaine { display: block; }
   .portrait { width: min(100%, var(--portrait-largeur-mobile)); margin-top: var(--esp-9); }
+  .presentation-bas.paysage .photo { margin-top: var(--esp-9); }
   .intro p { margin-top: var(--esp-5); max-width: var(--largeur-texte); }
 
   .panneaux, .colonnes { grid-template-columns: 1fr; }
@@ -556,6 +562,7 @@ img.photo {
 
   .grille > * + * { margin-top: var(--esp-9); }
   .grille .photo { width: min(100%, var(--portrait-largeur-mobile)); }
+  .grille .photo.format-paysage, .grille .photo.format-4-3 { width: 100%; }
   .domaine-texte { margin-top: var(--esp-5); max-width: var(--largeur-texte); }
   .fiche > div { column-gap: var(--esp-4); }
 
