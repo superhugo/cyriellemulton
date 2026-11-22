@@ -150,6 +150,7 @@ body::before {
   line-height: var(--interligne-chapo);
   margin-bottom: var(--esp-4);
 }
+.presentation-texte p:not(:first-child) + p { margin-top: var(--esp-4); }
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--actions-ecart); margin-top: var(--actions-haut); }
 
 /* ---------- Emplacements photo ---------- */
