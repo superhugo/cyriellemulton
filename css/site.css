@@ -45,9 +45,10 @@ h1, h2, h3, .logo {
   font-weight: var(--graisse-demi);
   line-height: var(--interligne-bouton);
   text-decoration: none;
-  transition: background-color var(--duree-courte) ease, color var(--duree-courte) ease;
+  transition: transform var(--duree-courte) ease, box-shadow var(--duree-courte) ease;
 }
-.btn:hover { background: var(--couleur-fond); color: var(--couleur-accent); }
+/* au survol, le bouton garde sa couleur : il se soulève et pose une ombre */
+.btn:hover { transform: translateY(var(--bouton-levee)); box-shadow: var(--bouton-ombre); }
 .btn-secondaire {
   display: inline-block;
   padding: var(--lien-marge) 0;

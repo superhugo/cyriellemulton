@@ -20,6 +20,7 @@
   /* les mêmes teintes en triplets, pour les dégradés à transparence :
      rgb(var(--x-rvb) / .5) */
   --lin-rvb: 241 235 223;
+  --outremer-rvb: 42 60 207;
   --lilas-rvb: 201 184 240;
   --lilas-2-rvb: 186 169 238;
   --pervenche-rvb: 163 181 241;
@@ -159,6 +160,8 @@
   --actions-haut: 36px;
 
   --bouton-marge: 15px 26px;
+  --bouton-levee: -2px;               /* soulèvement du bouton au survol */
+  --bouton-ombre: 0 8px 18px rgb(var(--outremer-rvb) / .28);
   --bouton-marge-entete: 12px 20px;
   --bouton-marge-mobile: 10px 14px;
   --lien-marge: 12px;
