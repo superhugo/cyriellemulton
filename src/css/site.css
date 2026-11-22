@@ -171,10 +171,9 @@ body::before {
     var(--photo-fond);
 }
 .portrait { grid-column: 9 / span 4; aspect-ratio: 4 / 5; }
-/* En-tête avec photo en paysage : 3:2 par défaut (même ratio que les cartes de l'accueil), 4:3 en variante */
+/* En-tête avec illustration en paysage : 4:3, comme les cartes de l'accueil */
 .presentation-bas.paysage .presentation-texte { grid-column: 1 / span 6; }
-.presentation-bas.paysage .photo { grid-column: 7 / span 6; aspect-ratio: 3 / 2; }
-.presentation-bas.paysage .photo.format-4-3 { aspect-ratio: 4 / 3; }
+.presentation-bas.paysage .photo { grid-column: 7 / span 6; aspect-ratio: 4 / 3; }
 img.photo {
   display: block;
   width: 100%;
@@ -281,7 +280,7 @@ img.photo {
   margin-bottom: var(--esp-fluide-3);
 }
 .activite .photo {
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 4 / 3;
   margin-bottom: var(--esp-fluide-2);
   color: var(--couleur-texte);
   border: var(--filet) solid var(--couleur-accent);
