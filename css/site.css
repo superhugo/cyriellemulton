@@ -506,7 +506,22 @@ body::before {
   white-space: normal;
 }
 .pied .metier { margin-top: var(--esp-3); font-size: var(--taille-texte-grand); font-weight: var(--graisse-moyen); }
-.pied .mentions { margin-top: var(--esp-fluide-4); }
+.pied .mentions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--esp-2) var(--esp-6);
+  margin-top: var(--esp-fluide-4);
+}
+/* sélecteur de langue : la langue en cours est soulignée, comme la page en cours dans le menu */
+.pied .langues { display: inline-flex; gap: var(--esp-4); }
+.pied .langues a {
+  text-decoration: none;
+  border-bottom: var(--filet) solid transparent;
+  transition: border-color var(--duree-courte) ease;
+}
+.pied .langues a:hover,
+.pied .langues a[aria-current] { border-bottom-color: currentColor; }
 .pied small { font-size: var(--taille-petit); }
 .pied a { text-decoration-thickness: var(--filet); text-underline-offset: var(--soulignement-decalage-pied); }
 
