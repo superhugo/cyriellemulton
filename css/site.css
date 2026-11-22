@@ -419,7 +419,7 @@ body::before {
 /* colonnes (les cours) */
 .colonnes {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--esp-fluide-4) var(--colonne-ecart);
 }
 .colonne {
@@ -428,9 +428,7 @@ body::before {
   padding-top: var(--esp-5);
   border-top: var(--filet) solid var(--couleur-accent);
 }
-.colonne .libelle { margin-bottom: var(--esp-fluide-1); }
 .colonne .titre-3 { margin-bottom: var(--esp-fluide-2); }
-.colonne .fiche { margin-top: auto; padding-top: var(--esp-6); }
 
 /* fiche : libellés et valeurs séparés par des filets */
 .fiche > div {
@@ -449,7 +447,6 @@ body::before {
   text-transform: uppercase;
 }
 .fiche strong { font-weight: var(--graisse-gras); }
-.fiche-serree > div { grid-template-columns: 6em minmax(0, 1fr); padding: var(--esp-2) 0; }
 
 /* liste à filets (principes) */
 .filets { margin-top: var(--esp-7); }
@@ -548,7 +545,6 @@ body::before {
   .domaine::before { display: block; padding-top: 0; margin-bottom: var(--esp-3); }
   .domaine-texte { margin-top: var(--esp-5); max-width: var(--largeur-texte); }
   .fiche > div { column-gap: var(--esp-4); }
-  .colonne .fiche > div:last-child { border-bottom: 0; }
 
 }
 
