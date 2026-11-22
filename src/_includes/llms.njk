@@ -1,0 +1,35 @@
+{%- set t = i18n[lang] -%}
+{%- set autre = "en" if lang == "fr" else "fr" -%}
+{%- set dp = " :" if lang == "fr" else ":" -%}
+# {{ site.nom }}
+{% for p in collections.all | sort(false, false, "url") %}{% if p.url == ("/" | versLangue(lang)) %}
+> {{ p.data.description | texteBrut | safe }}
+{% endif %}{% endfor %}
+{{ t.pied.metier | texteBrut | safe }}
+
+## {{ t.llms.pages }}
+{% for p in collections.all | sort(false, false, "url") %}{% if p.data.lang == lang %}
+- [{{ p.data.title | texteBrut | safe }}]({{ site.url }}{{ p.url }}): {{ p.data.description | texteBrut | safe }}
+{%- endif %}{% endfor %}
+
+## {{ t.cabinet.titre }}
+
+- {{ t.cabinet.adresse }}{{ dp }} {{ site.adresse | texteBrut | safe }}
+{%- for ligne in t.cabinet.acces %}
+- {{ ligne | texteBrut | safe }}
+{%- endfor %}
+- {{ t.cabinet.carteNote | texteBrut | safe }}
+
+## {{ t.llms.horaires }}
+{% for ligne in t.cabinet.horaires %}
+- {{ ligne | texteBrut | safe }}
+{%- endfor %}
+
+## {{ t.rdv }}
+
+- Doctolib{{ dp }} {{ site.doctolib }}
+- {{ t.llms.contact }}{{ dp }} {{ site.email }}
+
+## {{ t.llms.autreLangue }}
+
+- [llms.txt]({{ site.url }}{{ page.url | versLangue(autre) }})

@@ -35,6 +35,12 @@ export default {
       carteTitre: "Plan d'accès au cabinet, 44 avenue Jean Lolive à Pantin",
       carteNote: "Accessible en poussette et PMR",
     },
+    llms: {
+      pages: "Pages",
+      horaires: "Horaires de kinésithérapie",
+      contact: "E-mail",
+      autreLangue: "English version",
+    },
   },
 
   en: {
@@ -69,6 +75,12 @@ export default {
       ],
       carteTitre: "Map showing the practice at 44 avenue Jean Lolive, Pantin",
       carteNote: "Accessible to pushchairs and people with reduced mobility",
+    },
+    llms: {
+      pages: "Pages",
+      horaires: "Physiotherapy opening hours",
+      contact: "Email",
+      autreLangue: "Version française",
     },
   },
 };

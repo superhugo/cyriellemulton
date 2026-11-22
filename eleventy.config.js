@@ -14,6 +14,16 @@ export default function (eleventyConfig) {
     return lang === "en" ? "/en" + racine : racine;
   });
 
+  // HTML déjà échappé (front matter, i18n.js) vers texte brut, pour llms.txt
+  eleventyConfig.addFilter("texteBrut", (html) =>
+    String(html)
+      .replace(/<br\s*\/?>/g, ", ")
+      .replace(/<[^>]+>/g, "")
+      .replace(/&nbsp;/g, " ")
+      .replace(/&#8209;/g, "-")
+      .replace(/&amp;/g, "&"),
+  );
+
   return {
     dir: { input: "src", output: "_site" },
     htmlTemplateEngine: "njk",

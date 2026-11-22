@@ -17,6 +17,7 @@ Site vitrine de Cyrielle Multon, kinésithérapeute et professeure de yoga à Pa
 | Adresse, accès, horaires du cabinet | `src/_data/i18n.js` (`cabinet`) et `src/_data/site.js` |
 | Lien Doctolib, e-mail, domaine | `src/_data/site.js` |
 | `<head>`, en-tête, pied, bloc cabinet | `src/_includes/` |
+| `llms.txt` (résumé du site pour les assistants IA) | `src/_includes/llms.njk`, généré depuis le front matter des pages, `site.js` et `i18n.js` |
 | Styles | `src/css/tokens.css` (valeurs), `src/css/site.css` (règles) |
 
 ## Règles
