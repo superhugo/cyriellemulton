@@ -350,10 +350,8 @@ body::before {
 /* ---------- Composants des pages kiné et yoga ----------
    Pas d'encart derrière les textes : des filets, des chiffres et de grands titres. */
 
-/* liste éditoriale numérotée (domaines de prise en charge) */
-.domaines { counter-reset: rang; }
+/* liste éditoriale (domaines de prise en charge) */
 .domaine {
-  counter-increment: rang;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   column-gap: var(--colonne-ecart);
@@ -362,14 +360,6 @@ body::before {
   border-top: var(--filet) solid var(--couleur-accent);
 }
 .domaine:last-child { border-bottom: var(--filet) solid var(--couleur-accent); }
-.domaine::before {
-  content: counter(rang, decimal-leading-zero);
-  grid-column: 1 / span 1;
-  font-size: var(--taille-petit);
-  font-weight: var(--graisse-demi);
-  letter-spacing: var(--approche-surtitre);
-  padding-top: .5em;
-}
 .domaine h3, .titre-3 {
   font-size: var(--taille-titre-3);
   line-height: var(--interligne-titre-2);
@@ -377,7 +367,7 @@ body::before {
   color: var(--couleur-titre);
   text-wrap: balance;
 }
-.domaine h3 { grid-column: 2 / span 5; }
+.domaine h3 { grid-column: 1 / span 6; }
 .domaine-texte { grid-column: 8 / span 5; }
 .reperes {
   margin-top: var(--esp-4);
@@ -522,7 +512,7 @@ body::before {
   .presentation-texte { grid-column: 1 / span 7; }
   .cabinet-infos, .grille-a { grid-column: 1 / span 6; }
   .etapes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .domaine h3 { grid-column: 2 / span 6; }
+  .domaine h3 { grid-column: 1 / span 7; }
 }
 
 @media (max-width: 860px) {
@@ -542,7 +532,6 @@ body::before {
 
   .grille > * + * { margin-top: var(--esp-9); }
   .grille .photo { width: min(100%, var(--portrait-largeur-mobile)); }
-  .domaine::before { display: block; padding-top: 0; margin-bottom: var(--esp-3); }
   .domaine-texte { margin-top: var(--esp-5); max-width: var(--largeur-texte); }
   .fiche > div { column-gap: var(--esp-4); }
 
