@@ -1,41 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Physiotherapy in Pantin — Cyrielle Multon</title>
-  <meta name="description" content="Physiotherapy in Pantin: female and male pelvic floor, pregnancy and postpartum, infants, scars. Physiotherapist under agreement with French national health insurance. Book on Doctolib.">
-  <meta name="theme-color" content="#c5bdec">
-  <link rel="canonical" href="https://cyriellemulton.fr/en/kine/">
-  <link rel="alternate" hreflang="fr" href="https://cyriellemulton.fr/kine/">
-  <link rel="alternate" hreflang="en" href="https://cyriellemulton.fr/en/kine/">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_GB">
-  <meta property="og:site_name" content="Cyrielle Multon">
-  <meta property="og:title" content="Physiotherapy in Pantin — Cyrielle Multon">
-  <meta property="og:description" content="Female and male pelvic floor, pregnancy and postpartum, infants, scars. One-to-one sessions, with a gentle approach.">
-  <meta property="og:url" content="https://cyriellemulton.fr/en/kine/">
-  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/tokens.css">
-  <link rel="stylesheet" href="../../css/site.css">
-</head>
-<body class="page-kine">
-
-<!-- HEADER -->
-<header class="entete">
-  <a href="../" class="logo">Cyrielle Multon</a>
-  <nav aria-label="Main navigation">
-    <a href="../">Home</a>
-    <a href="./" aria-current="page">Physiotherapy</a>
-    <a href="../yoga/">Yoga</a>
-  </nav>
-  <a class="btn" href="https://www.doctolib.fr/masseur-kinesitherapeute/paris/cyrielle-multon" target="_blank" rel="noopener">Book an appointment</a>
-</header>
-
-<main>
+---
+layout: base.njk
+title: "Physiotherapy in Pantin — Cyrielle Multon"
+description: "Physiotherapy in Pantin: female and male pelvic floor, pregnancy and postpartum, infants, scars. Physiotherapist under agreement with French national health insurance. Book on Doctolib."
+ogDescription: "Female and male pelvic floor, pregnancy and postpartum, infants, scars. One-to-one sessions, with a gentle approach."
+themeColor: "#c5bdec"
+bodyClass: page-kine
+---
 <!-- 1. PRÉSENTATION -->
 <section class="presentation">
   <p class="surtitre">Physiotherapy in Pantin</p>
@@ -46,11 +16,11 @@
       <p>I care for bodies in all their diversity, with one conviction: your body belongs to you, and you are the person best placed to speak about what it is going through.</p>
       <p>I see you in one-to-one sessions, in a calm and confidential setting. We begin by taking time to talk, then move forward step by step, with clear explanations and always with your consent.</p>
       <div class="actions">
-        <a class="btn" href="https://www.doctolib.fr/masseur-kinesitherapeute/paris/cyrielle-multon" target="_blank" rel="noopener">Book on Doctolib</a>
-        <a class="btn-secondaire" href="mailto:kine@cyriellemulton.fr">A question? Write to me</a>
+        <a class="btn" href="{{ site.doctolib }}" target="_blank" rel="noopener">Book on Doctolib</a>
+        <a class="btn-secondaire" href="mailto:{{ site.email }}">A question? Write to me</a>
       </div>
     </div>
-    <img class="photo photo-teinte" src="../../images/cabinet-entree-1000.webp" srcset="../../images/cabinet-entree-1000.webp 1000w, ../../images/cabinet-entree-2000.webp 2000w" sizes="(max-width: 860px) 100vw, 45vw" width="2000" height="1333" alt="The practice entrance: a green wall with plants, waiting chairs and a glass door opening onto the courtyard">
+    <img class="photo photo-teinte" src="/images/cabinet-entree-1000.webp" srcset="/images/cabinet-entree-1000.webp 1000w, /images/cabinet-entree-2000.webp 2000w" sizes="(max-width: 860px) 100vw, 45vw" width="2000" height="1333" alt="The practice entrance: a green wall with plants, waiting chairs and a glass door opening onto the courtyard">
   </div>
 </section>
 
@@ -165,47 +135,12 @@
       </div>
     </dl>
 
-    <img class="photo photo-teinte format-paysage grille-etroite" src="../../images/salle-de-soin-1000.webp" srcset="../../images/salle-de-soin-1000.webp 1000w, ../../images/salle-de-soin-2000.webp 2000w" sizes="(max-width: 860px) 100vw, 38vw" width="2000" height="1333" alt="The treatment room at the practice: physiotherapy table, desk and windows" loading="lazy">
+    <img class="photo photo-teinte format-paysage grille-etroite" src="/images/salle-de-soin-1000.webp" srcset="/images/salle-de-soin-1000.webp 1000w, /images/salle-de-soin-2000.webp 2000w" sizes="(max-width: 860px) 100vw, 38vw" width="2000" height="1333" alt="The treatment room at the practice: physiotherapy table, desk and windows" loading="lazy">
   </div>
 </section>
 
 <!-- 6. LE CABINET -->
-<section id="cabinet" class="section cabinet">
-  <div class="intro">
-    <h2>The practice</h2>
-  </div>
-
-  <div class="cabinet-grille">
-    <div class="cabinet-infos">
-      <h3>Address</h3>
-      <address>44 avenue Jean Lolive<br>93500 Pantin</address>
-
-      <h3>Getting here</h3>
-      <ul class="acces">
-        <li><strong>Metro</strong> — line&nbsp;5, Hoche station (2&nbsp;min walk)</li>
-        <li><strong>RER</strong> — line&nbsp;E, Pantin station (12&nbsp;min walk)</li>
-        <li><strong>Bus</strong> — routes 170 and 249, Hoche stop</li>
-        <li><strong>Bike</strong> — Vélib' station and bike racks outside the practice</li>
-      </ul>
-
-      <h3>Opening hours</h3>
-      <ul class="acces">
-        <li><strong>Monday</strong> — 9&nbsp;am to 6&nbsp;pm</li>
-        <li><strong>Tuesday</strong> — 9&nbsp;am to 12&nbsp;pm</li>
-        <li><strong>Friday</strong> — 9&nbsp;am to 5&nbsp;pm</li>
-      </ul>
-
-      <a class="btn" href="https://www.doctolib.fr/masseur-kinesitherapeute/paris/cyrielle-multon" target="_blank" rel="noopener">Book an appointment</a>
-    </div>
-
-    <div class="cabinet-carte">
-      <div class="carte">
-        <iframe title="Map showing the practice at 44 avenue Jean Lolive, Pantin" src="https://www.google.com/maps?q=44+Avenue+Jean+Lolive,+93500+Pantin&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <p class="carte-note">Accessible to pushchairs and people with reduced mobility</p>
-    </div>
-  </div>
-</section>
+{% include "cabinet.njk" %}
 
 <!-- 7. QUESTIONS FRÉQUENTES -->
 <section class="section" id="questions">
@@ -252,29 +187,15 @@
     <div class="grille-a">
       <p class="chapo">Appointments are booked online, on Doctolib. If you are unsure which type of session to choose, write me a few lines: I will guide you.</p>
       <div class="actions">
-        <a class="btn" href="https://www.doctolib.fr/masseur-kinesitherapeute/paris/cyrielle-multon" target="_blank" rel="noopener">Book on Doctolib</a>
-        <a class="btn-secondaire" href="mailto:kine@cyriellemulton.fr">A question? Write to me</a>
+        <a class="btn" href="{{ site.doctolib }}" target="_blank" rel="noopener">Book on Doctolib</a>
+        <a class="btn-secondaire" href="mailto:{{ site.email }}">A question? Write to me</a>
       </div>
     </div>
 
-    <a class="activite yoga grille-b" href="../yoga/">
+    <a class="activite yoga grille-b" href="/en/yoga/">
       <h3>Yoga</h3>
       <p>Yoga that is attentive, inclusive and free of performance, in group or private classes.</p>
       <span class="suite">Find out more</span>
     </a>
   </div>
 </section>
-</main>
-
-<!-- FOOTER -->
-<footer class="pied">
-  <p class="logo">Cyrielle Multon</p>
-  <p class="metier">Physiotherapist · Yoga teacher</p>
-  <p class="mentions">
-    <small>© 2026 Cyrielle Multon</small>
-    <small class="langues" role="group" aria-label="Language"><a href="../../kine/" lang="fr" hreflang="fr">Français</a><a href="./" lang="en" hreflang="en" aria-current="true">English</a></small>
-  </p>
-</footer>
-
-</body>
-</html>

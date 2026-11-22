@@ -1,0 +1,63 @@
+---
+layout: base.njk
+title: "Cyrielle Multon — Physiotherapy &amp; yoga in Pantin"
+description: "Cyrielle Multon, physiotherapist in Pantin: pelvic floor rehabilitation, paediatrics, scar treatment. Prenatal, postnatal and vinyasa yoga classes. Book on Doctolib."
+ogDescription: "Pelvic floor rehabilitation, paediatrics and scar treatment, and yoga classes in Pantin. Gentle support, at your own pace."
+themeColor: "#c6c9e6"
+---
+<!-- 2. PRÉSENTATION -->
+<section id="presentation" class="presentation">
+  <p class="surtitre">Physiotherapy &amp; yoga in Pantin</p>
+  <h1>Every body, every gender, every story.</h1>
+
+  <div class="presentation-bas">
+    <div class="presentation-texte">
+      <p>I am Cyrielle Multon, a physiotherapist specialising in pelvic floor rehabilitation, paediatrics and scar treatment, and a yoga teacher. My intention: to help you know your body better so that you can regain confidence in it.</p>
+      <p>I do not believe in ready-made protocols. I start from you, from your history, from what you feel, and I explain clearly what is known today. Here, there is nothing to achieve and no one to judge you: we move forward together, until you no longer need me.</p>
+      <div class="actions">
+        <a class="btn" href="{{ site.doctolib }}" target="_blank" rel="noopener">Book on Doctolib</a>
+        <a class="btn-secondaire" href="mailto:{{ site.email }}">A question? Write to me</a>
+      </div>
+    </div>
+    <img class="photo portrait" src="/images/cyrielle-portrait-800.webp" srcset="/images/cyrielle-portrait-800.webp 800w, /images/cyrielle-portrait-1600.webp 1600w" sizes="(max-width: 860px) min(100vw, 420px), 34vw" width="1600" height="2000" alt="Portrait of Cyrielle Multon, smiling, in her physiotherapy practice">
+  </div>
+</section>
+
+<!-- 3. ACTIVITÉS -->
+<section id="activites" class="section">
+  <div class="intro">
+    <h2>Two practices, one&nbsp;conviction</h2>
+    <p>Care and movement complement each other: physiotherapy to rehabilitate and relieve, yoga to inhabit your body day to day.</p>
+  </div>
+
+  <div class="panneaux">
+    <a class="activite kine" href="/en/kine/">
+      <h3>Physiotherapy</h3>
+      <img class="photo" src="/images/cabinet-entree-1000.webp" srcset="/images/cabinet-entree-1000.webp 1000w, /images/cabinet-entree-2000.webp 2000w" sizes="(max-width: 860px) 100vw, 45vw" width="2000" height="1333" alt="" loading="lazy">
+      <ul>
+        <li>Female and male pelvic floor</li>
+        <li>Pregnancy and postpartum</li>
+        <li>Infants</li>
+        <li>Scars</li>
+      </ul>
+      <span class="suite">Find out more</span>
+    </a>
+
+    <a class="activite yoga" href="/en/yoga/">
+      <h3>Yoga</h3>
+      <div class="photo" role="img" aria-label="Photo placeholder: yoga class">
+        <span class="legende" aria-hidden="true">Yoga class</span>
+      </div>
+      <ul>
+        <li>Prenatal</li>
+        <li>Postnatal</li>
+        <li>Vinyasa</li>
+        <li>Private classes</li>
+      </ul>
+      <span class="suite">Find out more</span>
+    </a>
+  </div>
+</section>
+
+<!-- 4. LE CABINET -->
+{% include "cabinet.njk" %}

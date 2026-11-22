@@ -1,41 +1,11 @@
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kinésithérapie à Pantin — Cyrielle Multon</title>
-  <meta name="description" content="Kinésithérapie à Pantin : périnée féminin et masculin, grossesse et post-partum, nourrissons, cicatrices. Kinésithérapeute conventionnée, rendez-vous sur Doctolib.">
-  <meta name="theme-color" content="#c5bdec">
-  <link rel="canonical" href="https://cyriellemulton.fr/kine/">
-  <link rel="alternate" hreflang="fr" href="https://cyriellemulton.fr/kine/">
-  <link rel="alternate" hreflang="en" href="https://cyriellemulton.fr/en/kine/">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="fr_FR">
-  <meta property="og:site_name" content="Cyrielle Multon">
-  <meta property="og:title" content="Kinésithérapie à Pantin — Cyrielle Multon">
-  <meta property="og:description" content="Périnée féminin et masculin, grossesse et post-partum, nourrissons, cicatrices. Des séances individuelles, en douceur.">
-  <meta property="og:url" content="https://cyriellemulton.fr/kine/">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/tokens.css">
-  <link rel="stylesheet" href="../css/site.css">
-</head>
-<body class="page-kine">
-
-<!-- HEADER -->
-<header class="entete">
-  <a href="../" class="logo">Cyrielle Multon</a>
-  <nav aria-label="Navigation principale">
-    <a href="../">Accueil</a>
-    <a href="./" aria-current="page">Kinésithérapie</a>
-    <a href="../yoga/">Yoga</a>
-  </nav>
-  <a class="btn" href="https://www.doctolib.fr/masseur-kinesitherapeute/paris/cyrielle-multon" target="_blank" rel="noopener">Prendre rendez-vous</a>
-</header>
-
-<main>
+---
+layout: base.njk
+title: "Kinésithérapie à Pantin — Cyrielle Multon"
+description: "Kinésithérapie à Pantin : périnée féminin et masculin, grossesse et post-partum, nourrissons, cicatrices. Kinésithérapeute conventionnée, rendez-vous sur Doctolib."
+ogDescription: "Périnée féminin et masculin, grossesse et post-partum, nourrissons, cicatrices. Des séances individuelles, en douceur."
+themeColor: "#c5bdec"
+bodyClass: page-kine
+---
 <!-- 1. PRÉSENTATION -->
 <section class="presentation">
   <p class="surtitre">Kinésithérapie à Pantin</p>
@@ -46,11 +16,11 @@
       <p>J'accompagne les corps dans leur diversité, avec une conviction&nbsp;: votre corps vous appartient, et vous êtes la personne la mieux placée pour parler de ce qu'il vit.</p>
       <p>Je vous reçois en séance individuelle, dans le calme et la confidentialité. Nous commençons par un temps d'échange, puis nous avançons pas à pas, avec des explications claires et toujours avec votre accord.</p>
       <div class="actions">
-        <a class="btn" href="https://www.doctolib.fr/masseur-kinesitherapeute/paris/cyrielle-multon" target="_blank" rel="noopener">Prendre rendez-vous sur Doctolib</a>
-        <a class="btn-secondaire" href="mailto:kine@cyriellemulton.fr">Une question&nbsp;? Écrivez-moi</a>
+        <a class="btn" href="{{ site.doctolib }}" target="_blank" rel="noopener">Prendre rendez-vous sur Doctolib</a>
+        <a class="btn-secondaire" href="mailto:{{ site.email }}">Une question&nbsp;? Écrivez-moi</a>
       </div>
     </div>
-    <img class="photo photo-teinte" src="../images/cabinet-entree-1000.webp" srcset="../images/cabinet-entree-1000.webp 1000w, ../images/cabinet-entree-2000.webp 2000w" sizes="(max-width: 860px) 100vw, 45vw" width="2000" height="1333" alt="L'entrée du cabinet : mur vert garni de plantes, chaises d'attente et porte vitrée ouverte sur la cour">
+    <img class="photo photo-teinte" src="/images/cabinet-entree-1000.webp" srcset="/images/cabinet-entree-1000.webp 1000w, /images/cabinet-entree-2000.webp 2000w" sizes="(max-width: 860px) 100vw, 45vw" width="2000" height="1333" alt="L'entrée du cabinet : mur vert garni de plantes, chaises d'attente et porte vitrée ouverte sur la cour">
   </div>
 </section>
 
@@ -165,47 +135,12 @@
       </div>
     </dl>
 
-    <img class="photo photo-teinte format-paysage grille-etroite" src="../images/salle-de-soin-1000.webp" srcset="../images/salle-de-soin-1000.webp 1000w, ../images/salle-de-soin-2000.webp 2000w" sizes="(max-width: 860px) 100vw, 38vw" width="2000" height="1333" alt="La salle de soin du cabinet : table de kinésithérapie, bureau et fenêtres" loading="lazy">
+    <img class="photo photo-teinte format-paysage grille-etroite" src="/images/salle-de-soin-1000.webp" srcset="/images/salle-de-soin-1000.webp 1000w, /images/salle-de-soin-2000.webp 2000w" sizes="(max-width: 860px) 100vw, 38vw" width="2000" height="1333" alt="La salle de soin du cabinet : table de kinésithérapie, bureau et fenêtres" loading="lazy">
   </div>
 </section>
 
 <!-- 6. LE CABINET -->
-<section id="cabinet" class="section cabinet">
-  <div class="intro">
-    <h2>Le cabinet</h2>
-  </div>
-
-  <div class="cabinet-grille">
-    <div class="cabinet-infos">
-      <h3>Adresse</h3>
-      <address>44 avenue Jean Lolive<br>93500 Pantin</address>
-
-      <h3>Venir au cabinet</h3>
-      <ul class="acces">
-        <li><strong>Métro</strong> — ligne&nbsp;5, station Hoche (2&nbsp;min à pied)</li>
-        <li><strong>RER</strong> — ligne&nbsp;E, gare de Pantin (12&nbsp;min à pied)</li>
-        <li><strong>Bus</strong> — lignes 170 et 249, arrêt Hoche</li>
-        <li><strong>Vélo</strong> — station Vélib' et arceaux devant le cabinet</li>
-      </ul>
-
-      <h3>Horaires</h3>
-      <ul class="acces">
-        <li><strong>Lundi</strong> — 9h à 18h</li>
-        <li><strong>Mardi</strong> — 9h à 12h</li>
-        <li><strong>Vendredi</strong> — 9h à 17h</li>
-      </ul>
-
-      <a class="btn" href="https://www.doctolib.fr/masseur-kinesitherapeute/paris/cyrielle-multon" target="_blank" rel="noopener">Prendre rendez-vous</a>
-    </div>
-
-    <div class="cabinet-carte">
-      <div class="carte">
-        <iframe title="Plan d'accès au cabinet, 44 avenue Jean Lolive à Pantin" src="https://www.google.com/maps?q=44+Avenue+Jean+Lolive,+93500+Pantin&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <p class="carte-note">Accessible en poussette et PMR</p>
-    </div>
-  </div>
-</section>
+{% include "cabinet.njk" %}
 
 <!-- 7. QUESTIONS FRÉQUENTES -->
 <section class="section" id="questions">
@@ -252,29 +187,15 @@
     <div class="grille-a">
       <p class="chapo">Les rendez-vous se prennent en ligne, sur Doctolib. Si vous hésitez sur le type de séance à choisir, écrivez-moi quelques lignes&nbsp;: je vous orienterai.</p>
       <div class="actions">
-        <a class="btn" href="https://www.doctolib.fr/masseur-kinesitherapeute/paris/cyrielle-multon" target="_blank" rel="noopener">Prendre rendez-vous sur Doctolib</a>
-        <a class="btn-secondaire" href="mailto:kine@cyriellemulton.fr">Une question&nbsp;? Écrivez-moi</a>
+        <a class="btn" href="{{ site.doctolib }}" target="_blank" rel="noopener">Prendre rendez-vous sur Doctolib</a>
+        <a class="btn-secondaire" href="mailto:{{ site.email }}">Une question&nbsp;? Écrivez-moi</a>
       </div>
     </div>
 
-    <a class="activite yoga grille-b" href="../yoga/">
+    <a class="activite yoga grille-b" href="/yoga/">
       <h3>Yoga</h3>
       <p>Un yoga attentif, inclusif et sans performance, en cours collectif ou particulier.</p>
       <span class="suite">En savoir plus</span>
     </a>
   </div>
 </section>
-</main>
-
-<!-- FOOTER -->
-<footer class="pied">
-  <p class="logo">Cyrielle Multon</p>
-  <p class="metier">Kinésithérapeute · Professeure de yoga</p>
-  <p class="mentions">
-    <small>© 2026 Cyrielle Multon</small>
-    <small class="langues" role="group" aria-label="Langue"><a href="./" lang="fr" hreflang="fr" aria-current="true">Français</a><a href="../en/kine/" lang="en" hreflang="en">English</a></small>
-  </p>
-</footer>
-
-</body>
-</html>

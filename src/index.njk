@@ -1,0 +1,63 @@
+---
+layout: base.njk
+title: "Cyrielle Multon — Kinésithérapie &amp; yoga à Pantin"
+description: "Cyrielle Multon, kinésithérapeute à Pantin : rééducation périnéale, pédiatrie, traitement des cicatrices. Cours de yoga prénatal, postnatal et vinyasa. Rendez-vous sur Doctolib."
+ogDescription: "Rééducation périnéale, pédiatrie et traitement des cicatrices, et cours de yoga à Pantin. Un accompagnement en douceur, à votre rythme."
+themeColor: "#c6c9e6"
+---
+<!-- 2. PRÉSENTATION -->
+<section id="presentation" class="presentation">
+  <p class="surtitre">Kinésithérapie &amp; yoga à Pantin</p>
+  <h1>Tous les corps, tous les genres, toutes les histoires.</h1>
+
+  <div class="presentation-bas">
+    <div class="presentation-texte">
+      <p>Je suis Cyrielle Multon, kinésithérapeute spécialisée en rééducation périnéale, pédiatrie et traitement des cicatrices, et professeure de yoga. Mon intention&nbsp;: vous aider à mieux connaître votre corps pour reprendre confiance en lui.</p>
+      <p>Je ne crois pas aux protocoles tout faits. Je pars de vous, de votre histoire, de ce que vous ressentez, et je vous explique clairement ce que l'on sait aujourd'hui. Ici, rien à réussir et personne pour vous juger&nbsp;: nous avançons ensemble, jusqu'à ce que vous n'ayez plus besoin de moi.</p>
+      <div class="actions">
+        <a class="btn" href="{{ site.doctolib }}" target="_blank" rel="noopener">Prendre rendez-vous sur Doctolib</a>
+        <a class="btn-secondaire" href="mailto:{{ site.email }}">Une question&nbsp;? Écrivez-moi</a>
+      </div>
+    </div>
+    <img class="photo portrait" src="/images/cyrielle-portrait-800.webp" srcset="/images/cyrielle-portrait-800.webp 800w, /images/cyrielle-portrait-1600.webp 1600w" sizes="(max-width: 860px) min(100vw, 420px), 34vw" width="1600" height="2000" alt="Portrait de Cyrielle Multon, souriante, dans son cabinet de kinésithérapie">
+  </div>
+</section>
+
+<!-- 3. ACTIVITÉS -->
+<section id="activites" class="section">
+  <div class="intro">
+    <h2>Deux pratiques, une&nbsp;même&nbsp;conviction</h2>
+    <p>Le soin et le mouvement se complètent&nbsp;: la kinésithérapie pour rééduquer et soulager, le yoga pour habiter son corps au quotidien.</p>
+  </div>
+
+  <div class="panneaux">
+    <a class="activite kine" href="/kine/">
+      <h3>Kinésithérapie</h3>
+      <img class="photo" src="/images/cabinet-entree-1000.webp" srcset="/images/cabinet-entree-1000.webp 1000w, /images/cabinet-entree-2000.webp 2000w" sizes="(max-width: 860px) 100vw, 45vw" width="2000" height="1333" alt="" loading="lazy">
+      <ul>
+        <li>Périnée féminin et masculin</li>
+        <li>Grossesse et post-partum</li>
+        <li>Nourrissons</li>
+        <li>Cicatrices</li>
+      </ul>
+      <span class="suite">En savoir plus</span>
+    </a>
+
+    <a class="activite yoga" href="/yoga/">
+      <h3>Yoga</h3>
+      <div class="photo" role="img" aria-label="Emplacement photo&nbsp;: cours de yoga">
+        <span class="legende" aria-hidden="true">Cours de yoga</span>
+      </div>
+      <ul>
+        <li>Prénatal</li>
+        <li>Postnatal</li>
+        <li>Vinyasa</li>
+        <li>Cours particuliers</li>
+      </ul>
+      <span class="suite">En savoir plus</span>
+    </a>
+  </div>
+</section>
+
+<!-- 4. LE CABINET -->
+{% include "cabinet.njk" %}

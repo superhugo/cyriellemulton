@@ -1,0 +1,43 @@
+{#- Bloc « Le cabinet », commun à toutes les pages.
+    Options dans le front matter de la page :
+      cabinet:
+        horaires: false     masque les horaires (page yoga)
+        bouton: reserver    libellé « Réserver sur Doctolib » au lieu de « Prendre rendez-vous »
+-#}
+{%- set t = i18n[lang] -%}
+{%- set c = t.cabinet -%}
+<section id="cabinet" class="section cabinet">
+  <div class="intro">
+    <h2>{{ c.titre }}</h2>
+  </div>
+
+  <div class="cabinet-grille">
+    <div class="cabinet-infos">
+      <h3>{{ c.adresse }}</h3>
+      <address>{{ site.adresse | safe }}</address>
+
+      <h3>{{ c.venir }}</h3>
+      <ul class="acces">
+        {%- for ligne in c.acces %}
+        <li>{{ ligne | safe }}</li>
+        {%- endfor %}
+      </ul>
+{% if not cabinet or cabinet.horaires !== false %}
+      <h3>{{ c.horairesTitre }}</h3>
+      <ul class="acces">
+        {%- for ligne in c.horaires %}
+        <li>{{ ligne | safe }}</li>
+        {%- endfor %}
+      </ul>
+{% endif %}
+      <a class="btn" href="{{ site.doctolib }}" target="_blank" rel="noopener">{{ t.reserver if cabinet and cabinet.bouton == "reserver" else t.rdv }}</a>
+    </div>
+
+    <div class="cabinet-carte">
+      <div class="carte">
+        <iframe title="{{ c.carteTitre | safe }}" src="{{ site.carte | safe }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p class="carte-note">{{ c.carteNote }}</p>
+    </div>
+  </div>
+</section>

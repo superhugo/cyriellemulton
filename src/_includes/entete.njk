@@ -1,0 +1,17 @@
+{%- set t = i18n[lang] -%}
+{%- set racine = "/" | versLangue(lang) -%}
+{%- set liens = [
+  { url: racine, texte: t.nav.accueil },
+  { url: racine + "kine/", texte: t.nav.kine },
+  { url: racine + "yoga/", texte: t.nav.yoga }
+] -%}
+<!-- HEADER -->
+<header class="entete">
+  <a href="{{ racine }}" class="logo">{{ site.nom }}</a>
+  <nav aria-label="{{ t.nav.label }}">
+    {%- for lien in liens %}
+    <a href="{{ lien.url }}"{% if lien.url == page.url %} aria-current="page"{% endif %}>{{ lien.texte }}</a>
+    {%- endfor %}
+  </nav>
+  <a class="btn" href="{{ site.doctolib }}" target="_blank" rel="noopener">{{ t.rdv }}</a>
+</header>

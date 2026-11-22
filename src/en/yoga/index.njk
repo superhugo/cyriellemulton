@@ -1,41 +1,14 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yoga in Pantin — Cyrielle Multon</title>
-  <meta name="description" content="Yoga classes in Pantin with Cyrielle Multon, physiotherapist: prenatal, postnatal and vinyasa yoga, and private classes. Prenatal as a group class, other classes one-to-one.">
-  <meta name="theme-color" content="#cfe9d8">
-  <link rel="canonical" href="https://cyriellemulton.fr/en/yoga/">
-  <link rel="alternate" hreflang="fr" href="https://cyriellemulton.fr/yoga/">
-  <link rel="alternate" hreflang="en" href="https://cyriellemulton.fr/en/yoga/">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_GB">
-  <meta property="og:site_name" content="Cyrielle Multon">
-  <meta property="og:title" content="Yoga in Pantin — Cyrielle Multon">
-  <meta property="og:description" content="Yoga designed with a physiotherapist's eye: prenatal, postnatal, vinyasa and private classes in Pantin.">
-  <meta property="og:url" content="https://cyriellemulton.fr/en/yoga/">
-  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/tokens.css">
-  <link rel="stylesheet" href="../../css/site.css">
-</head>
-<body class="page-yoga">
-
-<!-- HEADER -->
-<header class="entete">
-  <a href="../" class="logo">Cyrielle Multon</a>
-  <nav aria-label="Main navigation">
-    <a href="../">Home</a>
-    <a href="../kine/">Physiotherapy</a>
-    <a href="./" aria-current="page">Yoga</a>
-  </nav>
-  <a class="btn" href="https://www.doctolib.fr/masseur-kinesitherapeute/paris/cyrielle-multon" target="_blank" rel="noopener">Book an appointment</a>
-</header>
-
-<main>
+---
+layout: base.njk
+title: "Yoga in Pantin — Cyrielle Multon"
+description: "Yoga classes in Pantin with Cyrielle Multon, physiotherapist: prenatal, postnatal and vinyasa yoga, and private classes. Prenatal as a group class, other classes one-to-one."
+ogDescription: "Yoga designed with a physiotherapist's eye: prenatal, postnatal, vinyasa and private classes in Pantin."
+themeColor: "#cfe9d8"
+bodyClass: page-yoga
+cabinet:
+  horaires: false
+  bouton: reserver
+---
 <!-- 1. PRÉSENTATION -->
 <section class="presentation">
   <p class="surtitre">Yoga in Pantin</p>
@@ -47,18 +20,18 @@
       <p>You also explore, try new things and have fun, and confidence in your body grows along the way.</p>
       <p>Every body can practise, yours included, whatever your age, your flexibility, your gender or your history. Come as you are: every posture has its variations, and resting is part of the class.</p>
       <div class="actions">
-        <a class="btn" href="https://www.doctolib.fr/masseur-kinesitherapeute/paris/cyrielle-multon" target="_blank" rel="noopener">Book on Doctolib</a>
-        <a class="btn-secondaire" href="mailto:kine@cyriellemulton.fr">Private class? Write to me</a>
+        <a class="btn" href="{{ site.doctolib }}" target="_blank" rel="noopener">Book on Doctolib</a>
+        <a class="btn-secondaire" href="mailto:{{ site.email }}">Private class? Write to me</a>
       </div>
     </div>
-    <img class="photo photo-teinte format-4-3" src="../../images/yoga-guerrier-1000.webp" srcset="../../images/yoga-guerrier-1000.webp 1000w, ../../images/yoga-guerrier-2000.webp 2000w" sizes="(max-width: 860px) 100vw, 45vw" width="2000" height="1500" alt="A woman in warrior II pose on a mat in the practice room">
+    <img class="photo photo-teinte format-4-3" src="/images/yoga-guerrier-1000.webp" srcset="/images/yoga-guerrier-1000.webp 1000w, /images/yoga-guerrier-2000.webp 2000w" sizes="(max-width: 860px) 100vw, 45vw" width="2000" height="1500" alt="A woman in warrior II pose on a mat in the practice room">
   </div>
 </section>
 
 <!-- 2. L'APPROCHE -->
 <section class="section" id="approche">
   <div class="grille">
-    <img class="photo photo-teinte format-4-3 grille-a" src="../../images/yoga-cours-1000.webp" srcset="../../images/yoga-cours-1000.webp 1000w, ../../images/yoga-cours-2000.webp 2000w" sizes="(max-width: 860px) 100vw, 38vw" width="2000" height="1500" alt="Group yoga class: four people sitting cross-legged on their mats in the practice's studio" loading="lazy">
+    <img class="photo photo-teinte format-4-3 grille-a" src="/images/yoga-cours-1000.webp" srcset="/images/yoga-cours-1000.webp 1000w, /images/yoga-cours-2000.webp 2000w" sizes="(max-width: 860px) 100vw, 38vw" width="2000" height="1500" alt="Group yoga class: four people sitting cross-legged on their mats in the practice's studio" loading="lazy">
 
     <div class="grille-b">
       <p class="surtitre">The approach</p>
@@ -131,40 +104,12 @@
       </div>
     </dl>
 
-    <img class="photo photo-teinte format-4-3 grille-etroite" src="../../images/salle-de-pratique-1000.webp" srcset="../../images/salle-de-pratique-1000.webp 1000w, ../../images/salle-de-pratique-2000.webp 2000w" sizes="(max-width: 860px) 100vw, 38vw" width="2000" height="1500" alt="The practice room: four yoga mats on the floor, wooden wall bars on a blue and white wall, hoops and an exercise bike" loading="lazy">
+    <img class="photo photo-teinte format-4-3 grille-etroite" src="/images/salle-de-pratique-1000.webp" srcset="/images/salle-de-pratique-1000.webp 1000w, /images/salle-de-pratique-2000.webp 2000w" sizes="(max-width: 860px) 100vw, 38vw" width="2000" height="1500" alt="The practice room: four yoga mats on the floor, wooden wall bars on a blue and white wall, hoops and an exercise bike" loading="lazy">
   </div>
 </section>
 
 <!-- 5. LE CABINET -->
-<section id="cabinet" class="section cabinet">
-  <div class="intro">
-    <h2>The practice</h2>
-  </div>
-
-  <div class="cabinet-grille">
-    <div class="cabinet-infos">
-      <h3>Address</h3>
-      <address>44 avenue Jean Lolive<br>93500 Pantin</address>
-
-      <h3>Getting here</h3>
-      <ul class="acces">
-        <li><strong>Metro</strong> — line&nbsp;5, Hoche station (2&nbsp;min walk)</li>
-        <li><strong>RER</strong> — line&nbsp;E, Pantin station (12&nbsp;min walk)</li>
-        <li><strong>Bus</strong> — routes 170 and 249, Hoche stop</li>
-        <li><strong>Bike</strong> — Vélib' station and bike racks outside the practice</li>
-      </ul>
-
-      <a class="btn" href="https://www.doctolib.fr/masseur-kinesitherapeute/paris/cyrielle-multon" target="_blank" rel="noopener">Book on Doctolib</a>
-    </div>
-
-    <div class="cabinet-carte">
-      <div class="carte">
-        <iframe title="Map showing the practice at 44 avenue Jean Lolive, Pantin" src="https://www.google.com/maps?q=44+Avenue+Jean+Lolive,+93500+Pantin&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <p class="carte-note">Accessible to pushchairs and people with reduced mobility</p>
-    </div>
-  </div>
-</section>
+{% include "cabinet.njk" %}
 
 <!-- 6. QUESTIONS FRÉQUENTES -->
 <section class="section" id="questions">
@@ -212,29 +157,15 @@
     <div class="grille-a">
       <p class="chapo">Group classes are booked online, on Doctolib. For a private class, write to me: tell me what brings you and I will reply with the next available dates.</p>
       <div class="actions">
-        <a class="btn" href="https://www.doctolib.fr/masseur-kinesitherapeute/paris/cyrielle-multon" target="_blank" rel="noopener">Book on Doctolib</a>
-        <a class="btn-secondaire" href="mailto:kine@cyriellemulton.fr">Private class? Write to me</a>
+        <a class="btn" href="{{ site.doctolib }}" target="_blank" rel="noopener">Book on Doctolib</a>
+        <a class="btn-secondaire" href="mailto:{{ site.email }}">Private class? Write to me</a>
       </div>
     </div>
 
-    <a class="activite kine grille-b" href="../kine/">
+    <a class="activite kine grille-b" href="/en/kine/">
       <h3>Physiotherapy</h3>
       <p>For care on prescription: female and male pelvic floor, pregnancy and postpartum, infants, scars.</p>
       <span class="suite">Find out more</span>
     </a>
   </div>
 </section>
-</main>
-
-<!-- FOOTER -->
-<footer class="pied">
-  <p class="logo">Cyrielle Multon</p>
-  <p class="metier">Physiotherapist · Yoga teacher</p>
-  <p class="mentions">
-    <small>© 2026 Cyrielle Multon</small>
-    <small class="langues" role="group" aria-label="Language"><a href="../../yoga/" lang="fr" hreflang="fr">Français</a><a href="./" lang="en" hreflang="en" aria-current="true">English</a></small>
-  </p>
-</footer>
-
-</body>
-</html>
