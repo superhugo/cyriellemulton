@@ -311,7 +311,7 @@ body::before {
 }
 .activite:hover .suite, .activite:focus-visible .suite { background: var(--couleur-accent); color: var(--couleur-sur-accent); }
 
-/* ---------- Le cabinet (home) ---------- */
+/* ---------- Le cabinet (toutes les pages) ---------- */
 .cabinet h3, .libelle {
   font-stretch: var(--chasse-texte);
   font-size: var(--taille-mini);
@@ -466,6 +466,8 @@ body::before {
 .faq summary::after { content: "+"; flex: none; font-stretch: var(--chasse-texte); font-weight: var(--graisse-normal); }
 .faq details[open] summary::after { content: "–"; }
 .faq details p { max-width: var(--largeur-texte); padding-bottom: var(--esp-6); }
+.faq details p:not(:last-child) { padding-bottom: var(--esp-3); }
+.faq details p + p { margin-top: 0; }
 
 /* rappel de fin de page : grand titre, actions, lien vers l'autre pratique */
 .rappel .grille { align-items: end; margin-top: var(--esp-fluide-5); }
