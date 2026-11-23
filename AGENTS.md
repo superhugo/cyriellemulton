@@ -31,7 +31,6 @@ Site vitrine de Cyrielle Multon, kinésithérapeute et professeure de yoga à Pa
 - **Pas de JavaScript.** Les FAQ utilisent `<details>`.
 - **Chaînes HTML** : le front matter et `i18n.js` contiennent du HTML déjà échappé (`&amp;`, `&nbsp;`), inséré avec `| safe`.
 - **Nouvelle page** : un `.njk` avec `layout: base.njk`, plus sa jumelle sous `src/en/`. Elle entre seule dans `sitemap.xml` ; ajouter le lien de menu dans `src/_includes/entete.njk`.
-- `archive/` (anciennes maquettes) est hors build et hors git.
 
 ## Publication
 

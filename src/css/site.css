@@ -180,18 +180,7 @@ img.photo {
   height: auto;
   object-fit: cover;
 }
-.format-portrait { aspect-ratio: 4 / 5; }
-.format-paysage { aspect-ratio: 3 / 2; }
 .format-4-3 { aspect-ratio: 4 / 3; }
-.legende {
-  position: absolute;
-  left: var(--legende-gauche);
-  bottom: var(--legende-bas);
-  font-size: var(--taille-mini);
-  font-weight: var(--graisse-moyen);
-  line-height: var(--interligne-legende);
-  letter-spacing: var(--approche-legende);
-}
 
 /* ---------- Sections ---------- */
 .section {
@@ -561,7 +550,7 @@ img.photo {
 
   .grille > * + * { margin-top: var(--esp-9); }
   .grille .photo { width: min(100%, var(--portrait-largeur-mobile)); }
-  .grille .photo.format-paysage, .grille .photo.format-4-3 { width: 100%; }
+  .grille .photo.format-4-3 { width: 100%; }
   .domaine-texte { margin-top: var(--esp-5); max-width: var(--largeur-texte); }
   .fiche > div { column-gap: var(--esp-4); }
 
