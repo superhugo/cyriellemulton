@@ -122,7 +122,8 @@
   --largeur-chapo: 33em;
 
   /* ---------- 4. Espacements et formes ---------- */
-  --gout: clamp(20px, 5.5vw, 96px);  /* marge latérale de la page */
+  --largeur-max: 1440px;  /* largeur maximale du contenu */
+  --gout: max(clamp(20px, 5.5vw, 96px), (100vw - var(--largeur-max)) / 2);  /* marge latérale de la page */
   --colonne-ecart: 32px;             /* gouttière de la grille 12 colonnes */
 
   --esp-1: 6px;
